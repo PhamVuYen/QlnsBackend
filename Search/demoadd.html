@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Thêm mới sinh viên</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron">
+				<h1 class="display-3" Align="center">THÊM MỚI NHÂN SỰ</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 offset-sm-3">
+				<form action="searchChamCong.php" method="POST" enctype="multipart/data-form">
+					<fieldset class="form-group">
+						<label for="exampleInputEmail1">Nhập:</label>
+						<input name="MaNV" type="text" class="form-control" placeholder="Nhập">
+					</fieldset>
+					<fieldset class="form-group">
+						<label for="exampleInputEmail1">Mã SV:</label>
+						<input name="Search" type="text" class="form-control" placeholder="Nhập Mã SV">
+					</fieldset>
+					
+					<button type="submit" class="btn btn-outline-primary">Thêm</button>
+				</form>
+			</div><!-- Hết col-6 -->
+		</div>
+	</div>
+</body>
+</html>
