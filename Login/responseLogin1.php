@@ -18,8 +18,7 @@ $response = array();
                 $row['Email'],$row['MucLuong'], 
                 $row['NgaySinh'],$row['DiaChi'], $row['SoTk'],$row['GioiTinh'], $row['SoCMND']);
                 //  $response['token'] = $Token;                
-                echo json_encode($Token);
-            }
+                echo $Token;            }
             // $response['success'] = true;
         }else {
             // header("HTTP/1.1 401 Unauthorized");
