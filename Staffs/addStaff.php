@@ -18,13 +18,13 @@
         $SoTk = isset($_POST['SoTk']) ? $_POST['SoTk']: '';
         $MaPB = isset($_POST['MaPB']) ? $_POST['MaPB']: '';
         $MucLuong = isset($_POST['MucLuong']) ? $_POST['MucLuong']: '';
-        // $ChucVu = isset($_POST['ChucVu']) ? $_POST['ChucVu']: '';
+         $Password = isset($_POST['Password']) ? $_POST['Password']: '';
         
         if(isset($_POST['MaNV']) && isset($_POST['TenNV']) && isset($_POST['NgaySinh']) && isset($_POST['DiaChi']) && isset($_POST['GioiTinh'])&& isset($_POST['Phone'])
-        && isset($_POST['Email'])&& isset($_POST['SoCMND'])&& isset($_POST['SoTk'])&& isset($_POST['MaPB'])&& isset($_POST['MucLuong'])){
+        && isset($_POST['Email'])&& isset($_POST['SoCMND'])&& isset($_POST['SoTk'])&& isset($_POST['MaPB'])&& isset($_POST['MucLuong'])&& isset($_POST['Password'])){
 
-            $query = "INSERT INTO nhanvien (MaNV, TenNV, NgaySinh, DiaChi, GioiTinh, Phone, Email, SoCMND, SoTk, MaPB, MucLuong) 
-                        VALUES ('$MaNV', '$TenNV', '$NgaySinh', '$DiaChi','$GioiTinh','$Phone', '$Email','$SoCMND', '$SoTk', '$MaPB','$MucLuong')";
+            $query = "INSERT INTO nhanvien (MaNV, TenNV, NgaySinh, DiaChi, GioiTinh, Phone, Email, SoCMND, SoTk, MaPB, MucLuong, Password) 
+                        VALUES ('$MaNV', '$TenNV', '$NgaySinh', '$DiaChi','$GioiTinh','$Phone', '$Email','$SoCMND', '$SoTk', '$MaPB','$MucLuong','$Password')";
             if($conn->query($query) == TRUE){
                  $response['message'] = "done";
             }else{
